@@ -1,0 +1,15 @@
+
+Analiza wyników dla obu punktów startowych:
+
+Dla punktu startowego x0 = 6:
+
+Funkcja fzero przeszukała początkowy przedział [6, 6] i oczywiście zauważyła, że na tym przedziale nie ma zmany znaku w wartościach zwracanych przez badaną funkcję tangensa. 
+Następnie zaczęła przeszukiwać kolejne przedziały, zmniejszając wartość lewej granicy i zwiększając prawą dopóki nie znalazła takiego przedziału, w którym występuje zmiana znaku 
+(w tym przypadku jest to przedział pomiędzy 5.66059 a 6.33941). Następnie użyła metody interpolacji w przedziale [5.66059, 6.33941], aby znaleźć miejsce zerowe.
+Wartość x dla której funkcja zwraca liczbę najbliższą do zera jest  6.28319.
+
+Dla punktu startowego x0 = 4.5:
+
+Podobnie jak dla pierwszego punktu startowego, funkcja fzero przeszukiwała kolejne przedziały, aż znalazła taki, w którym występuje zmiana znaku (pomiędzy 4.24544 a 4.75456).
+Jednakże w trakcie iteracji wartość funkcji zwiększała się w magnitudzie, co sugeruje, że punkt, w którym funkcja jest bliska zeru, może być w pobliżu punktu osobliwego. 
+("Current point x may be near a singular point.")
